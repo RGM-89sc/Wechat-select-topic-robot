@@ -24,5 +24,8 @@ def text_reply(msg):
     if match:
         return "Your send: " + text + "\nTime: " + localtime + "\nMsgNum: " + msg_num + "\n状态: 请等待处理"
 
+    # 其他信息
+    return "Your send: " + text + "\nTime: " + localtime + "\nMsgNum: " + msg_num + "\n备注: 机器人存活"
+
 itchat.auto_login(hotReload=True)
 itchat.run()
